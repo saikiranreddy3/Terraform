@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('cloning repository') {
       steps {
-      echo 'This is Test branch'
+      echo 'This is dev branch'
       }
     }
 }
