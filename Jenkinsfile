@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('cloning repository') {
       steps {
-      echo 'This is dev branch'
+      echo 'This is UAT branch'
       }
     }
 }
