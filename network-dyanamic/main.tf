@@ -1,6 +1,10 @@
 provider "aws" {
     region     = "us-west-2"
 }
+variable "subnet_cidr" {
+    type = list
+    default = ["10.10.0.0/24","10.10.1.0/24","10.10.2.0/24","10.10.3.0/24"]
+}
 
 resource "aws_vpc" "main_vpc" {
     cidr_block = "10.10.0.0/16"
